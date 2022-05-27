@@ -1,0 +1,35 @@
+@import '..//scss/variables.scss';
+.admin-container{
+    .admin-header{
+        height: 60px;
+        background-color: darkslategrey;
+        @include flex(center,space-between);
+        line-height: 60px;
+        padding:0 50px;
+        .MuiSvgIcon-root{
+            color:rgba(white,.5);
+            cursor: pointer;
+            &:hover{
+                color:rgba(white,1); 
+            }
+        }
+        ul{
+            list-style: none;
+            @include flex (center,none);
+            li{
+                @include flex (center,none);  
+                margin-right: 15px;
+                cursor: pointer;
+                color:rgba(white,.5);
+                &.active{
+                    text-decoration: underline;
+                    color:white;
+                }
+                &:hover{
+                    color:white;
+                }
+            }
+           
+        }
+    }
+}

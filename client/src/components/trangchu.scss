@@ -1,0 +1,117 @@
+@import '..//scss/variables.scss';
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://images.unsplash.com/photo-1565475783696-96001eff1b45?ixid=MXwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDh8fHxlbnwwfHx8&ixlib=rb-1.2.1&w=1000&q=80');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    .nav-header{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 100px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .header__avata{
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+            img{
+                height: 30px;
+                object-fit: contain;
+                border-radius: 50%;
+            }
+            .span{
+               margin-left: 5px;
+            }
+        }
+        a{
+            margin-right: 20px;
+            color:red;
+        }
+        .link{
+            color:red;
+            font-size: 1rem;
+            cursor: pointer;
+            &.login{
+                margin-right: 10px;
+            }
+        }
+    }
+    .section__main{
+        h1{
+            text-align: center;
+            font-size: 57px;
+            font-weight: 700;
+            color: #323232;
+            line-height: 0.9;
+        }
+        .section__event{
+            margin-top: 200px;
+            padding:0 100px;
+            .h3{
+              margin-bottom: 20px;
+              color: #616c81;
+            }
+           .section__slice{
+               display: flex;
+               overflow-x: scroll;
+               overflow-y: hidden;
+               width: 100%;
+               &::-webkit-scrollbar {
+                display: none;
+            }
+               .section__item{
+                   width: 237px;
+                   position: relative;
+                   height: 160px;
+                   border-radius: 5px;
+                   display: flex;
+                   justify-content:center ;
+                   align-items: center;
+                   margin-right: 25px;
+                   transition: .3s ease-in-out;
+                   &.active{
+                      border:2px solid red; 
+                   }
+                   &:hover{
+                       cursor: pointer;
+                       .image_item{
+                        transform: scale(1.02);
+                    }
+                   }
+                   .image_item{
+                       width: 230px;
+                       height: 155px;
+                       border-radius: 5px;
+                       transition: .3s ease-in-out;
+                   }
+                   .name{
+                       position: absolute;
+                       z-index: 2;
+                       bottom: 5%;
+                       left:0;
+                       padding:0 10px;
+                       color:white;
+                   }
+               }
+           }
+        }
+       
+    }
+   
+    
+}
+@keyframes shake {
+    0%{
+       transform: rotate(-6deg);
+    }
+    100%{
+        transform: rotate(-0deg);
+     }
+
+    
+}
+

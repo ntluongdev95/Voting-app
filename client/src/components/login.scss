@@ -1,0 +1,85 @@
+@import '..//scss/variables.scss';
+.login-container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://images.unsplash.com/photo-1565475783696-96001eff1b45?ixid=MXwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDh8fHxlbnwwfHx8&ixlib=rb-1.2.1&w=1000&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include flex(center,center);
+    .form-control{
+      box-shadow: 1px 1px 12px rgba(black,.6);
+      padding:20px 80px;
+      h1{
+          text-align: center;
+          margin-bottom: 20px;
+          color:red;
+      }
+      .input-control_password{
+        p{
+            color:red;
+        }
+          .password{
+              display: flex;
+              align-items: center;
+              position: relative;
+              input{
+                border:none;
+                outline:none;
+                padding:5px 10px;
+                margin:1px 0;
+                width: 300px;
+                height: 2rem;
+                border-radius: 5px;
+              }
+            
+            .MuiSvgIcon-root{
+                position: absolute;
+                right:10px;
+                font-size: medium;
+                cursor: pointer;
+            } 
+          }
+      }
+      .input-control{
+        @include flex(none,center);
+        flex-direction: column; 
+        margin:5px 0;
+        p{
+            color:red;
+        }
+        input{
+                border:none;
+                outline:none;
+                padding:5px 10px;
+                margin:1px 0;
+                width: 300px;
+                height: 2rem;
+                border-radius: 5px;
+        }
+        
+      }
+      button{
+        border:none;
+        outline:none; 
+        width: 300px;
+        height: 2rem;
+        color:white;
+        border-radius: 5px;
+        background-color:rgb(55, 145, 55); 
+        cursor: pointer;
+        margin:10px 0;
+        &:hover{
+            background-color:forestgreen;
+        }
+    }
+    .forgetPassword,.redirectToSignup{
+        text-align: center;
+        margin-bottom: 10px;
+        a{
+            color:red;
+        }
+    }
+
+    }
+}

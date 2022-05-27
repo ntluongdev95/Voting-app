@@ -1,0 +1,88 @@
+
+.vote__container{
+    height: 100vh;
+    width: 100%;
+    z-index: -2;
+    .vote__layer{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background-color:rgba(0,0,0,.8);
+        .vote__header{
+            padding:20px 50px;
+            display: flex;
+            align-items: center;
+            color:white;
+            .linkBuy{
+                margin-left: 80px;
+                .anl{
+                    color:red;
+                    font-size: 1.3rem;
+                }
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            .vote__title{
+                font-size: 36px;
+                margin-left: 10%;
+            }
+            .ending{display: flex;
+                align-items: center;
+                margin-left: 8%;
+                color:#06f1f6;
+                
+                text-shadow: 1px 1px 7px;
+                background: linear-gradient(270deg,#051817,#0e3839);
+                border-radius: 15px;
+                border:2px solid silver;
+                .clock{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding:1rem;
+                    .p{
+                        font-size: 3rem;
+                    }
+                    small{
+                        color:silver;
+                        text-shadow: none;
+                    }
+                }
+            }
+        }
+        .vote__cadidate{
+          padding-top: 70px ;
+           display: flex;
+           color:white;
+           justify-content: center;
+           overflow:hidden ;
+            .candidate__container{
+                margin-right: 30px;
+                text-align: center;
+                img{
+                  width: 200px; 
+                  height: 300px; 
+                }
+                .votes{
+                    font-size: 23px;
+                    color: #7b0b0c;
+                   font-weight: 600;
+                }
+                .vote__button{
+                    border:1px solid #0fb35a;
+                    margin-top: 10px;
+                    padding:6px 0;
+                    border-radius: 5px;
+                    background: #0fb35a;
+                    cursor: pointer;
+                    transition: .3s ease;
+                    &:hover{
+                        background: #09d464; 
+                    }
+                }
+            }
+        }
+    }
+}

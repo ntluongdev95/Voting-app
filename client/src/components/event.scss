@@ -1,0 +1,68 @@
+.candidate-container{
+    .candidate-form{
+        .row{
+            margin-bottom: 20px;
+            width: 100%;
+            .input{
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                padding:5px;
+                outline: none;
+            }
+            
+        }
+        .candidate__add{
+            width: 100%;
+            .search{
+                width: 100%;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                padding:5px;
+                outline: none;
+            }
+        }
+        .selected_results{
+            display: flex; 
+            width: 100%;
+            .selected_user{
+                display: flex;
+                align-items: center;
+                margin-top: 5px;
+                background-color: rgb(49, 40, 49);
+                padding:5px;
+                border-radius: 5px;
+                color:white;
+                margin-right: 10px;
+            }
+        }
+        .search_results{
+            max-height: 200px;
+            overflow-y: scroll;
+            width: 100%;
+            &::-webkit-scrollbar{
+                display: none;
+
+            }
+            .serach_user{
+                display: flex;
+                cursor: pointer;
+                margin-top: 15px;
+                width: 100%;
+                padding:10px;
+                border-radius: 10px;
+                background-color: yellowgreen;
+                .user_image{
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .file{
+            margin-top: 20px;
+        }
+    }
+}

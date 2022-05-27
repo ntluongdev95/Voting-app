@@ -1,0 +1,49 @@
+
+.winner__wrapper{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(0,0,0,.8);
+    .winner__center{
+        position: relative;
+        height: 80%;
+        width: 60%;
+        border-radius: 5px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-image: url('https://i.pinimg.com/originals/fd/1b/0b/fd1b0b9d7f6f9539a89d66c708d91cfe.gif');
+        .winner_h1{
+            text-align: center;
+            margin-top: 55px;
+            font-size: 4rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            color:red;
+        }
+        .close{
+            position: absolute;
+            right:10px;
+            top:10px;
+        }
+        .image__center{
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 50%;
+            .image__winner{
+                height: 100%;
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+    }
+}
